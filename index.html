@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/d59d8d9938.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="images/logo.png" class="logo" /> -->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Data scientist and Data analyst</p>
+          <h1>
+            Hi, I'm <span>Atharva </span><br />
+            Donode from India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              🚀 Aspiring Computer Science student with a passion for blending
+              technology and creativity. Eager(enthusiastic, keen, or excited)
+              to tackle challenges and constantly learn new skills. From coding
+              to design, I love turning ideas into reality. Let's connect and
+              explore the possibilities!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experiance')">
+                Experiance
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Data scientist</span><br />Programming: Python, R
+                  <br />Data Analysis: Pandas, NumPy <br />Machine Learning:
+                  Scikit-Learn, TensorFlow, Keras <br />Data Visualization:
+                  Matplotlib, Seaborn <br />Database Management: SQL
+                </li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>App Development</span><br />Building Android apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experiance">
+              <ul>
+                <!-- <li><span>Data scientist</span><br>Data analyst</li>
+                    <li><span>Web Development</span><br>Web app Development</li>
+                    <li><span>App Development</span><br>Building Android apps</li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2022</span><br />Diploma from Gov. Polytechnic Nagpur
+                </li>
+                <li><span>2025</span><br />B.Tech from YCCE Nagpur</li>
+                <!-- <li><span>App Development</span><br>Building Android apps</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------Services----------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2>Data scientist</h2>
+            <p>
+              As a dedicated data science student, I excel in leveraging
+              statistical analysis and machine learning algorithms to extract
+              meaningful insights from complex datasets. My proficiency in
+              programming languages like Python, coupled with hands-on
+              experience in data manipulation and visualization, positions me as
+              a promising candidate for solving real-world problems through
+              data-driven decision-making.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Wed design</h2>
+            <p>
+              🚀 "As an aspiring web designer, I bring a fresh perspective and a
+              passion for creating visually appealing and user-friendly
+              websites. With a strong foundation in design principles and
+              emerging web technologies, I aim to deliver innovative and
+              impactful digital experiences."
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>
+              As a dedicated student in app development, I specialize in
+              creating innovative and user-friendly mobile applications. My
+              portfolio showcases a diverse range of projects that demonstrate
+              my proficiency in coding, problem-solving, and delivering engaging
+              user experiences." experiences.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------PortFolio------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                This app connect you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                This app connect you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Online shopping App</h3>
+              <p>
+                This app connect you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- -----------------contact----------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> atharvadonode@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> 8788339210</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Send Now</button>
+            </form>
+            <span id="msg "></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Atharva Donode | All Rights Reserved</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+      }
+      function opentab(tabname) {
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeanu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeanu.style.right = "0";
+      }
+      function openmenu() {
+        sidemeanu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwsaCG7NBAf1h8J7zp_uOjz8OJ8efB1qRZAB3rYkYY4RaZtUw4G_4iyu8kWOBoe29JhlQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully ";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
